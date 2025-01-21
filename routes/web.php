@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\Transaksi\MainController as TransaksiMainController;
+use App\Http\Controllers\Product\MainController as ProductMainController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Category\MainController as CategoryMainController;
-use App\Http\Controllers\Profile\MainController as ProfileMainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +14,5 @@ use App\Http\Controllers\Profile\MainController as ProfileMainController;
 |
 */
 
-Route::get('/category', [CategoryMainController::class, 'index']);
-Route::get('/profile', [ProfileMainController::class, 'index']);
+Route::get('/transaksi', [TransaksiMainController::class, 'index']);
+Route::get('/produk', [ProductMainController::class, 'index']);
