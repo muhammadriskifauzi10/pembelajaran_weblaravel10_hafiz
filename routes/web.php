@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Transaksi\MainController as TransaksiMainController;
 use App\Http\Controllers\Product\MainController as ProductMainController;
+use App\Http\Controllers\Daftarmahasiswa\MainController as DaftarmahasiswaMainController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/transaksi', [TransaksiMainController::class, 'index']);
 Route::get('/produk', [ProductMainController::class, 'index']);
+Route::get('/daftarmahasiswa', [DaftarmahasiswaMainController::class, 'index']);
