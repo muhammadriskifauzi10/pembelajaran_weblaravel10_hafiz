@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/tampilkangambar', function () {
+    return view('viewgambar');
+});
+
+
 Route::get('/transaksi', [TransaksiMainController::class, 'index']);
 Route::get('/produk', [ProductMainController::class, 'index']);
 Route::get('/daftarmahasiswa', [DaftarmahasiswaMainController::class, 'index']);

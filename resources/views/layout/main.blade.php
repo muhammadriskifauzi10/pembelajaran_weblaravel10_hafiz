@@ -7,37 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $judul }}</title>
 
-    <style>
-        * {
-            margin: 0;
-        }
-
-        .mynavbar {
-            background-color: red;
-            padding: 16px;
-            text-align: center;
-        }
-
-        .mynavbar span {
-            color: white;
-            font-weight: bold;
-        }
-
-        .myfooter {
-            background-color: black;
-            padding: 16px;
-            text-align: center;
-        }
-
-        .myfooter span {
-            color: white;
-            font-weight: bold;
-        }
-
-        .mycontents {
-            padding: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 </head>
 
 <body>
